@@ -802,6 +802,91 @@
 </div>
 <!-- CONTACT SECTION END -->
 
+<!-- FORM MODAL POPUP -->
+<div id="popup-form" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-padding-large uk-background-default uk-box-shadow-large">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <!-- Form Title -->
+        <h2 class="uk-modal-title uk-text-center">Book Your Luxury Stay</h2>
+        <p class="uk-text-center uk-text-muted">Fill out the form below and our team will contact you shortly.</p>
+
+        <!-- Form -->
+        <form class="uk-form-stacked" action="mailto:info@aambyvalley.com" method="post" enctype="text/plain">
+
+            <!-- Name -->
+            <div class="uk-margin">
+                <label class="uk-form-label" for="name">Full Name</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="name" name="name" type="text" placeholder="Your Full Name" required>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="uk-margin">
+                <label class="uk-form-label" for="email">Email Address</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="email" name="email" type="email" placeholder="Your Email" required>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="uk-margin">
+                <label class="uk-form-label" for="phone">Phone Number</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="phone" name="phone" type="tel" placeholder="Your Phone Number" required>
+                </div>
+            </div>
+
+            <!-- Check-in & Check-out -->
+            <div class="uk-margin uk-grid-small uk-child-width-1-2@s" uk-grid>
+                <div>
+                    <label class="uk-form-label" for="checkin">Check-in Date</label>
+                    <input class="uk-input" id="checkin" name="checkin" type="date" required>
+                </div>
+                <div>
+                    <label class="uk-form-label" for="checkout">Check-out Date</label>
+                    <input class="uk-input" id="checkout" name="checkout" type="date" required>
+                </div>
+            </div>
+
+            <!-- Room Type -->
+            <div class="uk-margin">
+                <label class="uk-form-label" for="room">Select Room</label>
+                <div class="uk-form-controls">
+                <select class="uk-select" id="room" name="room" required>
+    <option value="">-- Choose a Room --</option>
+    <option value="Supreme Cottages">Supreme Cottages</option>
+    <option value="Spanish Cottage">Spanish Cottage</option>
+    <option value="Aussie Room">Aussie Room</option>
+    <option value="Premium Aussie Chalet">Premium Aussie Chalet</option>
+    <option value="Aveda Suite">Aveda Suite</option>
+    <option value="Burmese Chalet">Burmese Chalet</option>
+    <option value="Lake Side Cabana Room with Plunge Pool">Lake Side Cabana Room with Plunge Pool</option>
+</select>
+
+                </div>
+            </div>
+
+            <!-- Message -->
+            <div class="uk-margin">
+                <label class="uk-form-label" for="message">Additional Requests</label>
+                <div class="uk-form-controls">
+                    <textarea class="uk-textarea" id="message" name="message" rows="4" placeholder="Any special requests..."></textarea>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="uk-margin uk-text-center">
+                <button class="uk-button uk-button-primary uk-width-1-1@s" type="submit" style="background-color:#d4af37; color:#fff;">Submit Reservation</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
 
 
 	<!-- FOOTER -->
@@ -838,7 +923,7 @@
                     <h4 class="uk-heading-line uk-text-bold"><span>Contact Us</span></h4>
                     <ul class="uk-list uk-text-left">
                         <li><span class="fa fa-map-marker"></span> Aamby Valley Internal Road, near Post Office Ambavane, taluka, Mulshi, Lonavala, Maharashtra 410401</li>
-                        <li><span class="fa fa-phone"></span> +91-8619264513 </li>
+                        <li><span class="fa fa-phone"></span> +91-7426847876 </li>
                         <li><span class="fa fa-envelope"></span> info@example.com</li>
                     </ul>
                 </div>
@@ -861,6 +946,12 @@
 </footer>
 <!-- FOOTER END -->
 
+<!--\FIXED FOOTER DESIGN ON Max-MOBILE SITE/-->
+  <div class="footer-share-kmy">
+    <div class="footer-share-button"> <a href="https://api.whatsapp.com/send?phone=7426847876&amp;text=Hi, I Need Information " class="whatsapp">WhatsAPP</a> <a href="tel:+917426847876" class="call_btn_bottom">Call</a></div>
+  </div>
+  <!--/FIXED FOOTER DESIGN ON Max-MOBILE SITE END\-->
+
 		<!-- FOOTER END -->
 
     	<!-- Javascript -->
@@ -874,6 +965,14 @@
         <script src="js/tiny-date-picker.min.js"></script>
         <script src="js/date-config.js"></script>
         <script src="js/template-config.js"></script>
+
+		<!-- Script to auto-open popup on page load -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        UIkit.modal('#popup-form').show();
+    });
+</script>
+
     </body>
 
 
