@@ -804,7 +804,7 @@
 
 <!-- FORM MODAL POPUP -->
 <div id="popup-form" class="uk-modal-container" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-padding-large uk-background-default uk-box-shadow-large">
+    <div class="uk-modal-dialog uk-modal-body uk-padding-large uk-background-default uk-box-shadow-large" style="margin-top:60px; margin-bottom:60px; border-radius:12px;">
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
         <!-- Form Title -->
@@ -812,7 +812,7 @@
         <p class="uk-text-center uk-text-muted">Fill out the form below and our team will contact you shortly.</p>
 
         <!-- Form -->
-        <form class="uk-form-stacked" action="mailto:info@aambyvalley.com" method="post" enctype="text/plain">
+        <form class="uk-form-stacked" action="reservation.php" method="post">
 
             <!-- Name -->
             <div class="uk-margin">
@@ -854,17 +854,16 @@
             <div class="uk-margin">
                 <label class="uk-form-label" for="room">Select Room</label>
                 <div class="uk-form-controls">
-                <select class="uk-select" id="room" name="room" required>
-    <option value="">-- Choose a Room --</option>
-    <option value="Supreme Cottages">Supreme Cottages</option>
-    <option value="Spanish Cottage">Spanish Cottage</option>
-    <option value="Aussie Room">Aussie Room</option>
-    <option value="Premium Aussie Chalet">Premium Aussie Chalet</option>
-    <option value="Aveda Suite">Aveda Suite</option>
-    <option value="Burmese Chalet">Burmese Chalet</option>
-    <option value="Lake Side Cabana Room with Plunge Pool">Lake Side Cabana Room with Plunge Pool</option>
-</select>
-
+                    <select class="uk-select" id="room" name="room" required>
+                        <option value="">-- Choose a Room --</option>
+                        <option value="Supreme Cottages">Supreme Cottages</option>
+                        <option value="Spanish Cottage">Spanish Cottage</option>
+                        <option value="Aussie Room">Aussie Room</option>
+                        <option value="Premium Aussie Chalet">Premium Aussie Chalet</option>
+                        <option value="Aveda Suite">Aveda Suite</option>
+                        <option value="Burmese Chalet">Burmese Chalet</option>
+                        <option value="Lake Side Cabana Room with Plunge Pool">Lake Side Cabana Room with Plunge Pool</option>
+                    </select>
                 </div>
             </div>
 
@@ -884,6 +883,7 @@
         </form>
     </div>
 </div>
+
 
 
 
